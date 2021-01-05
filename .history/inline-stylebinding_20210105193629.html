@@ -7,10 +7,6 @@
   
   <div :style="{color: 'red', fontSize: fontSize + 'px'}">{{ message }}</div>
 
-  <div :style="styleObject">{{ message }}</div>
-
-  <div :style="[styleObject, styleObject2]">{{ message }}</div>
-
 
 </div>
 
@@ -25,14 +21,7 @@
     data: {
       message: 'Hello Naijeria',
       fontSize: 30,
-      styleObject: {
-        color: 'blue',
-        fontSize: '10px',
-      },
-      styleObject2: {
-        color: 'yellow',
-        fontSize: '100px',
-      }
+
     }
 
   }) 
