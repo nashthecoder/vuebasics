@@ -5,7 +5,7 @@
 <div id="app">
 
   <ul>
-    <li v-for="post in posts" :key="post.id">{{post.title}}</li>
+    <li></li>
   </ul>
 
 </div>
@@ -20,11 +20,13 @@
     el: '#app',
     data: {
 
-      posts: [
+      post: [
+
         {id: 1, title: 'Post 1', body: 'lorem ipsum datuts sordi loca lorem'},
         {id: 2, title: 'Post 2', body: 'lorem ipsum datuts sordi loca lorem'},
         {id: 3, title: 'Post 3', body: 'lorem ipsum datuts sordi loca lorem'},
-        {id: 4, title: 'Post 4', body: 'lorem ipsum datuts sordi loca lorem'}
+        {id: 4, title: 'Post 4', body: 'lorem ipsum datuts sordi loca lorem'},
+
       ]
 
     }
