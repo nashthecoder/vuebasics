@@ -7,8 +7,6 @@
   
   <h1>{{ message }}</h1>
   <h1>{{ number + 10 }}</h1>
-  <h1>{{ isActive ? 'is Active' : 'is Not Active'}}</h1>
-  <h1>{{ message.split('').reverse('').join('')}}</h1>
 
 
 </div>
@@ -18,14 +16,13 @@
 
 <script>
 
-  let vm = new Vue({
+  new Vue({
 
     el: '#app',
     data: {
 
       message: 'Hello Naijeria',
-      number: 10,
-      isActive: true
+      number: 10
     }
 
   }) 
