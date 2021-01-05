@@ -4,9 +4,7 @@
 
 <div id="app">
 
-  <button @click="increaseFont">Increase</button>
-
-  <button @click="decreaseFont">Decrease</button>
+  <button @click="increaseFont"></button>
   
   <div :style="{color: 'red', fontSize: fontSize + 'px'}">{{ message }}</div>
 
@@ -25,18 +23,11 @@
     el: '#app',
     data: {
       message: 'Hello Naijeria',
-      fontSize: 12,
+      fontSize: 30,
     },
 
     methods: {
-      increaseFont(){
-          this.fontSize++;
-      },
-
-      decreaseFont(){
-          this.fontSize--;
-      },
-
+      increaseFont: f
     },
 
   }) 

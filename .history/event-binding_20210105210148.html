@@ -4,13 +4,12 @@
 
 <div id="app">
 
-  <button @click="increaseFont">Increase</button>
-
-  <button @click="decreaseFont">Decrease</button>
   
   <div :style="{color: 'red', fontSize: fontSize + 'px'}">{{ message }}</div>
 
+  <div :style="styleObject">{{ message }}</div>
 
+  <div :style="[styleObject, styleObject2]">{{ message }}</div>
 
 
 </div>
@@ -25,19 +24,16 @@
     el: '#app',
     data: {
       message: 'Hello Naijeria',
-      fontSize: 12,
-    },
-
-    methods: {
-      increaseFont(){
-          this.fontSize++;
+      fontSize: 30,
+      styleObject: {
+        color: 'blue',
+        fontSize: '10px',
       },
-
-      decreaseFont(){
-          this.fontSize--;
-      },
-
-    },
+      styleObject2: {
+        color: 'yellow',
+        fontSize: '100px',
+      }
+    }
 
   }) 
 
