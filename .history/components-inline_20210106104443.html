@@ -6,7 +6,7 @@
 
   
   <posts inline-template>
-    <h1 @click="display">Hello, Naijeria</h1>
+    <h1>Hello, Naijeria</h1>
   </posts>
 
 
@@ -18,23 +18,17 @@
 <script>
 
   Vue.component('posts', {
-   data() {
-    return {
-
-    }
-   },
-
-   methods: {
-
-    display() {
-      console.log('Hello Nash!')
-    }
-   }
+   
   });
 
   let vm = new Vue({
 
     el: '#app',
+    data: {
+
+      message: 'Hello Naijeria',
+
+    }
 
   }) 
 
