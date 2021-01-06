@@ -4,15 +4,15 @@
   <thead>
     <tr>
       <th scope="col">Id</th>
-      <th scope="col">Title</th>
-      <th scope="col">Body</th>
+      <th scope="col">title</th>
+      <th scope="col">body</th>
 
     </tr>
   </thead>
   <tbody>
-    <tr v-for="post in posts" :key="post.id" >
-      <th scope="row"></th>
-      <td>{{post.id}}</td>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{post.Id}}</td>
       <td>{{post.title}}</td>
       <td>{{post.body}}</td>
     </tr>
