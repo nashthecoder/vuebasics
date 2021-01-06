@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <PostsExample />
+    <PostsExample></PostsExample>
   </div>
 </template>
 
@@ -13,6 +13,7 @@ export default {
   components: {
     HelloWorld,
     PostsExample
+
   }
 }
 </script>

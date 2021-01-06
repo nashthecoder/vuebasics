@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <PostsExample />
+   <img src="./assets/logo.png">
+    <HelloWorld/>
+    <PostsExample></PostsExample>
   </div>
 </template>
 
@@ -13,6 +15,7 @@ export default {
   components: {
     HelloWorld,
     PostsExample
+
   }
 }
 </script>
