@@ -29,7 +29,12 @@ export default {
   name: 'PostsExample',
   data(){
     return{
-      posts: []
+      posts: [
+        {id:1, title: 'Post 1', body: "this is the text body"},
+        {id:2, title: 'Post 2', body: "this is the text body"},
+        {id:3, title: 'Post 3', body: "this is the text body"},
+        {id:4, title: 'Post 4', body: "this is the text body"},
+      ]
     }
   }
 

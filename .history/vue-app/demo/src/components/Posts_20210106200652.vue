@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr v-for="post in posts" :key="post.id" >
-      <th scope="row"></th>
+      <th scope="row">{{userId}}</th>
       <td>{{post.id}}</td>
       <td>{{post.title}}</td>
       <td>{{post.body}}</td>

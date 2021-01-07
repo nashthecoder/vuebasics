@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr v-for="post in posts" :key="post.id" >
-      <th scope="row"></th>
+      <th scope="row">{{}userId}</th>
       <td>{{post.id}}</td>
       <td>{{post.title}}</td>
       <td>{{post.body}}</td>
@@ -29,7 +29,12 @@ export default {
   name: 'PostsExample',
   data(){
     return{
-      posts: []
+      posts: [
+        {userId:123, id:1, title: 'Post 1', body: "this is the text body"},
+        {userId:453, id:2, title: 'Post 2', body: "this is the text body"},
+        {userId:873, id:3, title: 'Post 3', body: "this is the text body"},
+        {userId:259, id:4, title: 'Post 4', body: "this is the text body"},
+      ]
     }
   }
 
